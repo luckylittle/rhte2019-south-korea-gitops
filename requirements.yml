@@ -1,0 +1,8 @@
+---
+- src: https://github.com/redhat-cop/openshift-applier
+  version: master
+
+# The git repository for this project
+- src: https://github.com/luckylittle/rhte2019-south-korea-gitops.git
+  name: self
+  version: master

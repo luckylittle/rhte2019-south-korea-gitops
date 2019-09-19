@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: image-registry
+  namespace: openshift-image-registry
+spec:
+  host: image-registry.{{ openshift_ingress_default_subdomain }}
+  port:
+    targetPort: 5000-tcp
+  to:
+    kind: Service
+    name: image-registry
